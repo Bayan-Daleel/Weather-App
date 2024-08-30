@@ -16,7 +16,7 @@ formElm.addEventListener("submit",(e) => {
 async function getWeaherData(cityValue){
     try{
    const response=await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${keyApi}&units=metric`);
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${keyApi}&units=metric`);
  
     const data= await response.json();
    
